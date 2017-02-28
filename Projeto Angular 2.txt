@@ -1,0 +1,48 @@
+Projeto Angular 2
+=================Start=================
+cd diretório
+ng new nome-do-projeto
+ng serve
+             ====ou====
+mkdir NomeProjeto
+ng init
+ng serve
+=================Component=================
+ng g c nome-do-component
+-para o component funcionar , tem que pegar a tag do selector
+e jogar para o app.component.html
+
+=====================================================
+
+Scaffold	 Usage
+_______________________
+Component	= ng g component my-new-component
+Directive	= ng g directive my-new-directive
+Pipe		= ng g pipe my-new-pipe
+Service		= ng g service my-new-service   //tem que especificar o diretótrio
+Class		= ng g class my-new-class
+Interface	= ng g interface my-new-interface
+Enum		= ng g enum my-new-enum
+Module		= ng g module my-module
+
+=================BootStrap=================
+<!-- index.html -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+=================Pré-Processador Style=================
+ng new meu-projeto --style=sass
+ng new meu-projeto --style=less
+ng new meu-projeto --style=stylus
+
+ou mudar após o projeto estar feito
+
+ng set defaults.styleExt scss
+ng set defaults.styleExt less
+ng set defaults.styleExt styl
+=================Testes=================
+ng lint | para debugar
+ng test | para test
+ng e2e 	| para test
+=================Distribuição=================
+ng buid
+ng buid --prod | finaliza e compacta
