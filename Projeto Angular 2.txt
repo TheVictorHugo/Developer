@@ -29,6 +29,19 @@ Module		= ng g module my-module
 <!-- index.html -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
+ou
+
+npm install --save bootstrap@next
+
+"../node_modules/bootstrap/dist/css/bootstrap.css"
+
+app[0].scripts
+"scripts":[
+"../node_modules/jquery/dist/jquery.js",
+"../node_modules/tether/dist/js/tether.js",
+"../node_modules/bootstrap/dist/js/bootstrap.js"
+],
+
 =================Pré-Processador Style=================
 ng new meu-projeto --style=sass
 ng new meu-projeto --style=less
