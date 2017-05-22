@@ -1,6 +1,6 @@
 Projeto Angular 2
 =================Start=================
-cd diret�rio
+cd diretório
 ng new nome-do-projeto
 ng serve
              ====ou====
@@ -19,7 +19,7 @@ _______________________
 Component	= ng g component my-new-component
 Directive	= ng g directive my-new-directive
 Pipe		= ng g pipe my-new-pipe
-Service		= ng g service my-new-service   //tem que especificar o diret�trio
+Service		= ng g service my-new-service   //tem que especificar o diretótrio
 Class		= ng g class my-new-class
 Interface	= ng g interface my-new-interface
 Enum		= ng g enum my-new-enum
@@ -42,12 +42,12 @@ app[0].scripts
 "../node_modules/bootstrap/dist/js/bootstrap.js"
 ],
 
-=================Pr�-Processador Style=================
+=================Pré-Processador Style=================
 ng new meu-projeto --style=sass
 ng new meu-projeto --style=less
 ng new meu-projeto --style=stylus
 
-ou mudar ap�s o projeto estar feito
+ou mudar após o projeto estar feito
 
 ng set defaults.styleExt scss
 ng set defaults.styleExt less
@@ -56,7 +56,7 @@ ng set defaults.styleExt styl
 ng lint | para debugar
 ng test | para test
 ng e2e 	| para test
-=================Distribui��o=================
+=================Distribuição=================
 ng buid
 ng buid --prod | finaliza e compacta
 
@@ -67,4 +67,90 @@ ngSwitch
 ngSwitchCase
 ngSwitchDefault
 ngFor
+===========================================
+metadado=============================
+
+@Component
+@Injectable
+@RouterConfig
+
+Data Binding=============================
+
+<div>{{cliente.nome}}</div>
+<div [exibir]="exibir"></div>
+<button (click)="listar()">Listar</button>
+
+Diretiva=============================
+
+*ngFor’ e o ‘*ngIf’,
+ngSwitch’, ‘ngClass’, ‘ngStyle
+e também temos a anotação ‘@Directive’ que nos permitirá criar nossas próprias diretivas.
+
+Pipes=============================
+{{texto | uppercase}}
+podemos utilizar mais de um filtro em sequencia utilizando o operador pipe.
+
+
+======================================
+shutdown/s
+
+<div class="sidebar">
+
+style="position: fixed;z-index: 1000;left: 250px;width:0;height: 100%;margin-left: -250px;overflow-y: auto;background: #000;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;"
+style:"padding-left: 0;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;"
+
+
+https://mdbootstrap.com/javascript/sidenav/
+https://echeung.me/ng-sidebar/
+
+ng serve --host 0.0.0.0 --port 4201
+npm run build
+toggle
+Projeto atual MPM
+
+
+==================celular========================
+<div>Using hidden</div>
+<div class="hidden-sm hidden-md">hidden-sm hidden-md</div>
+<div class="hidden-sm hidden-lg">hidden-sm hidden-lg</div>
+<div class="hidden-md hidden-lg">hidden-md hidden-lg</div>
+<div>Theoretical equivalent using visible</div>
+<div class="visible-lg">hidden-sm hidden-md</div>
+<div class="visible-md">hidden-sm hidden-lg</div>
+<div class="visible-sm">hidden-md hidden-lg</div>
+
+====================Links====================
+http://angular2-materialize.surge.sh/#/Buttons
+
+====================UPDATE====================
+
+npm i -g npm-check-updates
+npm-check-updates -u
+npm install
+
+Global package:
+
+npm uninstall -g angular-cli @angular/cli
+npm cache clean
+npm install -g @angular/cli@latest
+Local project package:
+
+rm -rf node_modules dist # On Windows use rmdir /s /q node_modules dist
+npm install --save-dev @angular/cli@latest
+npm install
+ng init
+
+===================Workspace project============================
+  
+ "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.js":{
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": true
+    }
 
