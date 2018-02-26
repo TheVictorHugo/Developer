@@ -1,0 +1,29 @@
+veja a versão do linux:
+- lsb_release -a
+
+- Server version:
+pg_config --version
+
+- Client version:
+psql --version
+
+remover postegresql:
+-sudo apt-get --purge remove postgresql\*
+-------------------------------------------------------------------
+
+for install PostgresSQL
+
+https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1255709
+
+https://www.digitalocean.com/community/tutorials/como-instalar-e-utilizar-o-postgresql-no-ubuntu-16-04-pt
+---------------------------------------------------------------------
+postegres versão 10
+
+sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main"
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install postgresql
+
+------------------------------------------------------------------------
+sudo passwd postgres 
+su postgres 

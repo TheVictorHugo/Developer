@@ -1,0 +1,20 @@
+===================IONIC================
+
+ionic start myApp tabs
+ionic start myApp blank
+ionic serve
+ionic cordova run android
+
+ionic cordova run --livereload
+===================================
+
+export ANDROID_HOME=/home/victor/android
+echo $ANDROID_HOME
+
+sudo nano /etc/bash.bashrc
+===================================
+
+pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" maxlength="255">
+
+
+

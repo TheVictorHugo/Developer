@@ -1,0 +1,52 @@
+https://msdn.microsoft.com/pt-br/library/6fw3zxcx(v=vs.94).aspx
+
+
+Metedos / Java Script
+
+HTML Tag(JavaScript);
+charAt(string);
+charCodeAt(sting);
+codePointAt(cadeia de caracteres);
+concat(cadeia de caracteres);
+endesWith(cadeia e caracteres);
+includes(string);
+indexOf(string);
+lastInexOf(string);
+localeCompare(string);
+match(string);
+normalize(string);
+repeat(string);
+replace(cadeia de caractres);
+search(string);
+slice(cadeia de caracteres);
+split(cadeia de caracteres);
+startwich(cadeia de caracteres);
+substr(string);
+substring(string);
+toLocalelower(string);
+toLocaleUpperCase(string);
+toLocaleLowerCase(string);
+toLowerCase(JavaScript);
+toUpperCase(string);
+trim(string);
+toString(string);
+valueOf(string); 
+
+Metodos For arrays
+-----------------------
+forEach(); // For mostrando os nomes
+map(); //  retorna um segunto array
+filter(); // filtra o array de acordo com a condição dada;
+find(); retorna o primeiro elemento encontrado
+every(); retorna um booleano se encontrar o elemento
+some(); valida se existe um valor e retorna um booleano;
+reuce(); retorna a soma de todos os números o array
+=====================================================================
+Propriedades / JavaScript
+
+constructor(cadeia de caracteres);
+length(cadeia de caracteres);
+prototype(string);
+String.fromCharCode(JavaScript);
+String.fromCodePoint(JavaScript);
+String.raw(JavaScript);
